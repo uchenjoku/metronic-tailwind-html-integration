@@ -11,8 +11,7 @@ const GlobalInit = dynamic(() => import('../components/GlobalInit'), { ssr: fals
 
 export default function App({ Component, pageProps }: AppProps) {
   return <>
-      <div className="flex grow">
-        <Sidebar />
+      <div className="flex grow flex-col [[data-sticky-header=on]_&amp;]:pt-[--tw-header-height-default]">
         <div className="wrapper flex grow flex-col">
           <Header />
           <main className="grow content pt-5" id="content" role="content">
